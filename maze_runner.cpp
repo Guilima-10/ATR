@@ -46,7 +46,7 @@ Position load_maze(const std::string& file_name) {
 
 // Função para imprimir o labirinto corretamente
 void print_maze(const Position& current) {
-    //std::this_thread::sleep_for(std::chrono::milliseconds(200)); // Delay para visualização
+    std::this_thread::sleep_for(std::chrono::milliseconds(200)); // Delay para visualização
 
     for (int i = 0; i < num_rows; ++i) {
         for (int j = 0; j < num_cols; ++j) {
